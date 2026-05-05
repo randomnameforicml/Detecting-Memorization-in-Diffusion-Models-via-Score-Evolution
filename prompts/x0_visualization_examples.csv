@@ -1,0 +1,9 @@
+prompt_id,prompt,label,source,split,model_group,display_group
+viz_mem_00,The No Limits Business Woman Podcast,1,Webster memorized prompt list,memorized,sd14_sd15,memorized
+viz_mem_01,Full body U-Zip main opening - Full body U-Zip main opening on front of bag for easy unloading when you get to camp,1,Webster memorized prompt list,memorized,sd14_sd15,memorized
+viz_mem_02,Mothers influence on her young hippo,1,Webster memorized prompt list,memorized,sd14_sd15,memorized
+viz_mem_03,"""Watch: Passion Pit's New Video, """"Lifted Up (1985)""""""",1,Webster memorized prompt list,memorized,sd14_sd15,memorized
+viz_gen_00,A small kitchen with some quirky art decorations.,0,Generalized prompt list used in prior memorization detection evaluation,generalized,sd14_sd15,generalized
+viz_gen_01,A dog wearing a bandanna and sitting on the trunk of a car.,0,Generalized prompt list used in prior memorization detection evaluation,generalized,sd14_sd15,generalized
+viz_gen_02,A small kitchen contains a refrigerator and small counter.,0,Generalized prompt list used in prior memorization detection evaluation,generalized,sd14_sd15,generalized
+viz_gen_03,A small refrigerator in a small kitchen with a window.,0,Generalized prompt list used in prior memorization detection evaluation,generalized,sd14_sd15,generalized

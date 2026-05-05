@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Generated experiment outputs.
+results/*
+!results/.gitkeep
+figures/*
+!figures/.gitkeep
+
+# Model and cache artifacts.
+.cache/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
