@@ -83,27 +83,6 @@ DSM(1->2) = ||Delta s_2 - Delta s_1||_2^2
 The CSV also stores optional `dt`-normalized diagnostics, but the default
 outputs and aggregate scripts use raw DSM.
 
-## Score Conversion
-
-The code does not assume all Stable Diffusion checkpoints are epsilon
-prediction models. It reads `scheduler.config.prediction_type` and converts the
-UNet output to epsilon before computing the VP/DDPM score:
-
-```text
-s_t(x_t) ~= -epsilon_theta(x_t,t) / sqrt(1 - alpha_bar_t).
-```
-
-For `prediction_type == "epsilon"`, the UNet output is epsilon.
-
-For `prediction_type == "v_prediction"`, the code uses the standard diffusers
-conversion:
-
-```text
-epsilon = sqrt(alpha_bar_t) * v + sqrt(1 - alpha_bar_t) * x_t.
-```
-
-This is the important SD2-family guardrail.
-
 ## Run DSM Evaluation
 
 SD1.4:

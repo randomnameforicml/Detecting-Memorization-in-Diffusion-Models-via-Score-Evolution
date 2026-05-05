@@ -47,8 +47,8 @@ def model_output_to_epsilon(
 
         eps = alpha * v + sigma * x_t.
 
-    Keeping this conversion isolated prevents SD2-style checkpoints from
-    being accidentally treated like epsilon-prediction models.
+    The conversion is kept isolated so scheduler-specific output handling stays
+    in one place.
     """
     if prediction_type in {"epsilon", "sample_epsilon"}:
         return model_output
